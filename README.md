@@ -1,30 +1,8 @@
-# Machine Learning Project: Classification & Analysis
+# Labeling Microbial Activity in Wastewater
 
-This project satisfies the requirements of a supervised machine learning module by applying classification techniques to **two distinct datasets**, each representing a separate subproject with unique objectives and challenges:
-
-- [**Diabetes Prediction**](#diabetes-prediction)  
-  Focused on classifying individuals as diabetic or non-diabetic using health metrics such as glucose levels, BMI, and insulin. This dataset required addressing class imbalance and evaluating model effectiveness across various metrics.
-
-- [**Labeling Microbial Activity in Wastewater**](#labeling-microbial-activity-in-wastewater)  
-  A multiclass classification task to label wastewater samples based on microbial activity levels, using chemical and temperature-based features. This project involved clustering, environmental feature analysis, and assessing generalization performance across models.
-
-Each subproject has its own dedicated [Overview](#overview) section and analysis, organized under the titles above for clarity and structure.
+A multiclass classification task to label wastewater samples based on microbial activity levels, using chemical and temperature-based features. This project involved clustering, environmental feature analysis, and assessing generalization performance across models.
 
 ## Overview
-
-## Diabetes Prediction
-The purpose of this project is to analyze and classify diabetes data using machine learning models, with the goal of predicting whether an individual has diabetes based on a set of health-related features. The dataset consists of 768 samples, with an imbalanced class distribution of approximately 500 non-diabetic and 250 diabetic cases. To address the class imbalance, **SMOTE (Synthetic Minority Over-sampling Technique)** was applied to balance the data and improve model performance.
-
-The analysis involved exploring feature correlations, including the strong relationships between **glucose**, **insulin**, **BMI**, and **age**, which were key indicators for predicting diabetes. Feature engineering was followed by the application of five machine learning models: **Gaussian Naive Bayes**, **Logistic Regression**, **Decision Tree**, **Support Vector Classifier (SVC)**, and **K-Nearest Neighbors (KNN)**. These models were evaluated based on accuracy, precision, recall, F1 score, and cross-validation performance.
-
-The results revealed that **Gaussian Naive Bayes** was the most consistent performer across all metrics, closely followed by **Logistic Regression**. **SVC** showed strong generalization capabilities, while **Decision Tree** and **KNN** exhibited slightly weaker performance. The application of cross-validation helped in assessing model stability, particularly with the imbalanced class distribution.
-
-Overall, this project demonstrates the ability to apply machine learning techniques to a health-related dataset, providing insights into diabetes classification and highlighting the importance of model selection and class balancing.
-
---- 
-
-## Labeling Microbial Activity in Wastewater
-
 The purpose of this project is to analyze and classify microbial activity levels in wastewater using various machine learning models. The dataset, containing 1,382 samples, was evenly distributed across three classes: **low**, **medium**, and **high** microbial activity. The analysis involves data preprocessing, feature exploration, and dimensionality reduction, along with class balancing to optimize model performance. The features investigated include chemical oxygen demand (COD), biological oxygen demand (BOD), ammonia, nitrogen, and temperature metrics.
 
 This project utilizes machine learning models, including **Logistic Regression**, **Gaussian Naive Bayes**, **Support Vector Classifier (SVC)**, **K-Nearest Neighbors (KNN)**, and **Decision Tree**, to predict microbial activity levels based on the wastewater characteristics. Through this process, key insights were gained regarding the relationships between features such as temperature, ammonia, and organic matter, with microbial activity levels.
